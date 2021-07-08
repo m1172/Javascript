@@ -44,7 +44,6 @@ function cbrt(a) {
 console.log(cbrt(27));
 
 var str = "webrain IT academy"
-
 var b= str.includes("IT")
 
 console.log(str.substring(str.includes("IT"),));
