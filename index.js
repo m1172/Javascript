@@ -1,9 +1,9 @@
 // 1-masala
 
-var a = 5
-var b = a%2
+// var a = 5
+// var b = a%2
 
-console.log(b ==0 && `${a} Juft son ` || `${a} Toq son`);
+// console.log(b ==0 && `${a} Juft son ` || `${a} Toq son`);
 
 // var a = 5
 // var b =a%2
@@ -25,6 +25,8 @@ console.log(b ==0 && `${a} Juft son ` || `${a} Toq son`);
 // console.log(a>b && a-b);
 
 
+var str = "998 99 123 45 67"
+console.log(str.replace('123 45 6', '******'));
 
 
 
