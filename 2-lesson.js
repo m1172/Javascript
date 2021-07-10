@@ -5,6 +5,7 @@ var str = "9989912345 67"
 
 console.log(str.slice(1, 9));
 
+console.log();
 
 function sqrt(a) {
     return a**(1/2)
