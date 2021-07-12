@@ -26,10 +26,22 @@ console.log(a>b && a-b);
 
 havo = 20
 
-if(havo>= 20){
+if(havo>= 20 && havo < 50){
     console.log('bugun havo issiq');
-}else if (havo<20){
+}else if (havo<20 && havo > 0 ){
     console.log('bugun havo iliq');
-}else{
+}else if(havo < 0){
     console.log('bugun havo sovuq');
+}else{
+    console.log('nomalum ob havo');
 }
+ 
+ var havo1 = 'bulutli'
+
+switch (havo1){
+    case 'iliq': console.log('soyabon shartmas');break;
+    case 'sovuq': console.log('isiqroq kiyinib oling'); break;
+    case 'issiq': console.log('yengil kiyinib oling'); break;
+    default: console.log('bunday malumot yoq');
+}
+ 
