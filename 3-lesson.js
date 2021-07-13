@@ -19,3 +19,4 @@ if(GPA>= 95 ){
 }else if(GPA < 60){
     console.log('F');
 }
+console.log('hello');
