@@ -44,4 +44,9 @@ switch (havo1){
     case 'issiq': console.log('yengil kiyinib oling'); break;
     default: console.log('bunday malumot yoq');
 }
- 
+
+var number = [0,1, 2, 3, 4, 5, 6, 7, 8 ];
+
+number.reduce((count, value) => {
+    console.log(count, value);
+}, 0);
