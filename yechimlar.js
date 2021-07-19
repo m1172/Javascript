@@ -25,3 +25,5 @@ for (let i = 1; i < 100; i++) {
 var c = parseInt(Math.random()*100)
 console.log(c);
 console.log(c<100);
+
+console.log(c>100);
