@@ -37,12 +37,9 @@ var students= [
 ];
 
 
-students.sort(function(a, b){
-    var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase();
-    if (nameA < nameB) 
-     return -1;
-    if (nameA > nameB)
-     return 1;
-    return 0; 
-   });
+
+students.sort(function(a,b){
+    return a.name.localeCompare(b.name);
+})
+
    console.log(students);
