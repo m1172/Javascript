@@ -42,12 +42,9 @@ var students= [
     },
 
 ];
-
-students.sort(function(a,b){
-    return a.name.localeCompare(b.name);
-})
-
+students.sort((a,b) => a.name.localeCompare(b.name));
    console.log(students);
+
 
 console.log("****************************************************");
 console.log("****************************************************");
