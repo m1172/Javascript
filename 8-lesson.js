@@ -42,24 +42,3 @@ var students= [
     },
 
 ];
-students.sort((a,b) => a.name.localeCompare(b.name));
-   console.log(students);
-
-
-console.log("****************************************************");
-console.log("****************************************************");
-console.log("****************************************************");
-
-
-students.map((value) =>{
-    if(value.year < 2000)
-    console.log(value);
-});
-
-
-const deleteUSer = (id)=> {
-    const newData = students.filter(value => value.id != id);
-    console.log(newData);
-}
-deleteUSer(5)
-
