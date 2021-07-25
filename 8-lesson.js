@@ -42,3 +42,13 @@ var students= [
     },
 
 ];
+
+var obj= {
+    od: 6,
+    year: 2002,
+    name: 'Abdulla',
+    surname: 'Abdulkhaev',
+};
+
+const {id, year, surname, name} =obj;
+console.log(name);
