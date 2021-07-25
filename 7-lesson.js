@@ -59,7 +59,7 @@ students.map((value) =>{
 
 const deleteUSer = (id)=> {
     const newData = students.filter(value => value.id != id);
-    console.log(newData);
+    console.log(...newData);
 }
 deleteUSer(5)
 

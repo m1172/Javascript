@@ -49,6 +49,7 @@ var obj= {
     name: 'Abdulla',
     surname: 'Abdulkhaev',
 };
+const name = 'Webbrain';
 
 const {id, year, surname, name} =obj;
 console.log(name);
