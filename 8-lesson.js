@@ -65,11 +65,11 @@ funC('Mentor');
 class classF{
     constructor(status){
         // console.log(status);
-        this.status = 'srador'
+        this.status = status;
     }
     getName(){
-        console.log(this);
+        console.log(this.status);
     }
  }
-const user=new classF('mentor');
+const user=new classF('Ali');
 user.getName();
