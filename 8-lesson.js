@@ -58,4 +58,13 @@ console.log(name);
 function funC(status){
     console.log(status);
 }
-funC('Mentor')
+funC('Mentor');
+
+
+//Class
+class classF{
+    constructor(status){
+        console.log(status);
+    }
+}
+new classF('mentor');
