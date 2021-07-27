@@ -71,5 +71,11 @@ class classF{
         console.log(this.status);
     }
  }
-const user=new classF('Ali');
-user.getName();
+
+ class Department extends student {
+     constructor(name, surname, status){
+         super(status)
+     }
+ }
+
+
