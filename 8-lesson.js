@@ -78,4 +78,9 @@ class classF{
      }
  }
 
+ const user = new Department('Sardor', 'Mukhtorov', 'IT');
+
+ user.getName();
+
+
 
