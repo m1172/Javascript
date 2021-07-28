@@ -13,3 +13,13 @@ const ochirish = (id) => {
 };
 
 ochirish(1);
+
+
+const ozgartirish = (id) => {
+    const yangi1 = ar.map((value) =>
+      value.id ===id ? {...value, name: 'Bekzod'} : value
+      );
+    console.log(yangi1);
+};
+
+ozgartirish(3);
