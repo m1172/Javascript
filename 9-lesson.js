@@ -17,9 +17,16 @@ ochirish(1);
 
 const ozgartirish = (id) => {
     const yangi1 = ar.map((value) =>
-      value.id ===id ? {...value, name: 'Bekzod'} : value
+      value.id === id ? {...value, name: 'Bekzod'} : value
       );
     console.log(yangi1);
 };
 
 ozgartirish(3);
+
+
+const Facebook = ( username, password, callback) =>{
+    setTimeout(()=>{},1000)
+}
+
+Facebook('smd', 1234, )
