@@ -8,8 +8,8 @@ const ar = [
 ];
 
 const ochirish = (id) => {
-    const yangi = ar.filter((e) => e.id !=id);
-    console.log(...yangi);
+    const yangi = ar.filter((value) => value.id !=id);
+    console.log(yangi);
 };
 
 ochirish(1);
