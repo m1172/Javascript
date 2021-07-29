@@ -34,6 +34,5 @@ const Facebook = (usr, pw, callback) => {
         else return callback('login yoki pw xato');
     }, 3000);
 };
-
 console.log('started...');
 Facebook('smd', 12345, (data) => console.log(data));
