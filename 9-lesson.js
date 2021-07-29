@@ -24,9 +24,17 @@ const ozgartirish = (id) => {
 
 ozgartirish(3);
 
+const username = 'smd';
+const password = 12345;
 
-const Facebook = ( username, password, callback) =>{
-    setTimeout(()=>{},1000)
-}
+const Facebook = (usr, pw) => {
+    setTimeout(() => {
+        if (username === usr && password === pw) return 'welcome to Facebook';
+        else return 'login yoki pw xato';
+    }, 1000);
+};
 
-Facebook('smd', 1234, )
+console.log('started...');
+const user = Facebook('smd', 1234);
+
+console.log(user);
