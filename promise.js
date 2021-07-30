@@ -19,5 +19,3 @@ new Promise((resolve, reject) => {
     };
 
     getInfo();
-
-    console.log('try catch');
