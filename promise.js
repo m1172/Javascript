@@ -9,8 +9,8 @@ new Promise((resolve, reject) => {
             else reject('login yoki pw xato');
     }, 2000);
 })
-    // .then((info) => console.log(info))
-    // .catch((err) => console.log(err));
+    .then((info) => console.log(info))
+    .catch((err) => console.log(err));
     const getInfo = async () => {
         console.log('started...');
         const usr = user;
@@ -19,3 +19,5 @@ new Promise((resolve, reject) => {
     };
 
     getInfo();
+
+    console.log('try catch');
