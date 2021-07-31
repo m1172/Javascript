@@ -50,7 +50,6 @@ var obj= {
     surname: 'Abdulkhaev',
 };
 
-
 const {id, year, surname, name} =obj;
 console.log(name);
 
@@ -59,7 +58,6 @@ function funC(status){
     console.log(status);
 }
 funC('Mentor');
-
 
 //Class
 class classF{
