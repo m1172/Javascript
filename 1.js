@@ -1,12 +1,76 @@
-var str = {  name: 'Muhammadali 1'}
-Object.seal(str);
-str.yosh=22;
-console.log(str);
+// function prime(tub) {
+//     for(let i = 2; i < tub; i++)
+//       if(tub % i === 0) return false;
+//     return tub > 1;
+//   }
 
+//   console.log(prime(29));
 
+// function sum(all) {
+//   var a=0;
+//   for(var i=1; i<all; i++){
+//    if (i%3 ===0 || i%5===0) {
+//      a+=i
+//      }
+//    }
+//   console.log(a);
+// }
+// sum(10);
+// console.log(sum(18));
 
-var str1= 'iwuwhew'
-console.log(str1.split(''));
-const propertyNames = Object.entries(str);
+// function last(str,last) {
+//   console.log(str.endsWith(last));
+// }
+// last('aqlli','li');
 
-console.log(propertyNames);
+// function last(str,last){
+// console.log(str.lastIndexOf(last)>0);
+// }
+// last('kitob','')
+
+// function last(str, last) {
+//   for (let i = 0; i < str.length; i--) return str.indexOf(last, i) >= 0;
+// }
+// console.log(last('kitob', 'to'));
+
+// function array(soz) {
+//   var unli = ['a', 'e', 'i', 'o', 'u'];
+//   for (let i = 0; i < unli.length; i++) {
+//     var un = unli[i];
+//     console.log(soz.includes(unli[i]));
+//   }
+// }
+// array('muhammadali');
+
+// function vowel(str) {
+//   var unli = ['a', 'e', 'i', 'o', 'u'];
+//   arr = str.split('');
+//   let count = 0;
+//   arr.forEach((harf) => {
+//     if (unli.includes(harf) !== false) {
+//       count++;
+//     }
+//   });
+//   console.log(count);
+// }
+// vowel('muhammadali');
+
+// function harf(str, b) {
+//   var a = b.split('');
+//   arr = str.split('');
+//   let count = 0;
+//   arr.forEach((harf) => {
+//     if (a.includes(harf) !== false) {
+//       count++;
+//     }
+//   });
+//   return str.length === count;
+// }
+// console.log(harf('abc', 'bca'));
+
+const ochirish = (ar, raqam) => {
+  const yangi = ar.filter((value) => value != raqam);
+  console.log(yangi);
+};
+
+ochirish([1, 2, 2, 2, 3], [2]);
