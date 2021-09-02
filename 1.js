@@ -74,3 +74,19 @@
 // };
 
 // ochirish([1, 2, 2, 2, 3], [2]);
+
+function raqam(num) {
+  var a = num.toString().split('');
+  var b = 0;
+  var c = 0;
+  for (let i = 0; i <= a.length; i++) {
+    c += a[i] ** a.length;
+    // console.log(eval(b));
+
+    return b;
+  }
+  return b + c;
+  console.log(b);
+}
+console.log(raqam(153));
+// raqam(153);
