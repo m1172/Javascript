@@ -78,14 +78,13 @@
 function raqam(num) {
   var a = num.toString().split('');
   var b = 0;
-  var c = 0;
   for (let i = 0; i <= a.length; i++) {
-    c += a[i] ** a.length;
+    b += a[i] ** a.length;
     // console.log(eval(b));
 
-    return b;
+    // return b;
   }
-  return b + c;
+  // return b;
   console.log(b);
 }
 console.log(raqam(153));
