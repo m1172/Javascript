@@ -68,9 +68,9 @@
 // }
 // console.log(harf('abc', 'bca'));
 
-const ochirish = (ar, raqam) => {
-  const yangi = ar.filter((value) => value != raqam);
-  console.log(yangi);
-};
+// const ochirish = (ar, raqam) => {
+//   const yangi = ar.filter((value) => value != raqam);
+//   console.log(yangi);
+// };
 
-ochirish([1, 2, 2, 2, 3], [2]);
+// ochirish([1, 2, 2, 2, 3], [2]);
