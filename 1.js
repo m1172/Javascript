@@ -94,8 +94,9 @@ function alifbo(values) {
   let value = values.toLowerCase().split('');
   value.forEach((e) => {
     if (alphabet.indexOf(e) !== -1) {
-      alphabet++;
+      console.log(alphabet.indexOf(e) + 1);
     }
   });
 }
-console.log(alifbo("The sunset sets at twelve o'clock. "));
+// console.log(alifbo("The sunset sets at twelve o'clock. "));
+alifbo("The sunset sets at twelve o'clock. ");
