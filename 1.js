@@ -98,5 +98,4 @@ function alifbo(values) {
     }
   });
 }
-// console.log(alifbo("The sunset sets at twelve o'clock. "));
 alifbo("The sunset sets at twelve o'clock. ");
