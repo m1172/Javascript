@@ -89,12 +89,13 @@
 // }
 // console.log(raqam(153));
 
-function alifbo(value) {
+function alifbo(values) {
   let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-
-  for (let i = 1; i < 26; i++) {
-    alphabet = i;
-    console.log((alphabet = i));
-  }
+  let value = values.toLowerCase().split('');
+  value.forEach((e) => {
+    if (alphabet.indexOf(e) !== -1) {
+      alphabet++;
+    }
+  });
 }
-alifbo("The sunset sets at twelve o'clock. ");
+console.log(alifbo("The sunset sets at twelve o'clock. "));
