@@ -74,18 +74,19 @@
 // };
 
 // ochirish([1, 2, 2, 2, 3], [2]);
+// let number;
+// function raqam(num) {
+//   var a = num.toString().split('');
+//   var b = 0;
+//   // a[(1, 5, 3, x)];
+//   for (let i = 0; i < a.length; i++) {
+//     b += Number(a[i]) ** a.length;
 
-function raqam(num) {
-  var a = num.toString().split('');
-  var b = 0;
-  for (let i = 0; i <= a.length; i++) {
-    b += a[i] ** a.length;
-    // console.log(eval(b));
+//     number = b;
+//   }
 
-    // return b;
-  }
-  // return b;
-  console.log(b);
-}
-console.log(raqam(153));
-// raqam(153);
+//   return number;
+// }
+// console.log(raqam(153));
+
+let alphabet = 'abcdefghijklmnopqrstuvwxyz';
