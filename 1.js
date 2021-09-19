@@ -89,13 +89,24 @@
 // }
 // console.log(raqam(153));
 
-function alifbo(values) {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
-  let value = values.toLowerCase().split('');
-  value.forEach((e) => {
-    if (alphabet.indexOf(e) !== -1) {
-      console.log(alphabet.indexOf(e) + 1);
+// function alifbo(values) {
+//   let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+//   let value = values.toLowerCase().split('');
+//   value.forEach((e) => {
+//     if (alphabet.indexOf(e) !== -1) {
+//       console.log(alphabet.indexOf(e) + 1);
+//     }
+//   });
+// }
+// alifbo("The sunset sets at twelve o'clock. ");
+
+function raqam(value) {
+  a = value.split('');
+  a.forEach((value) => {
+    if (a < value) {
+      console.log(parseInt(value));
     }
   });
+  // console.log(a);
 }
-alifbo("The sunset sets at twelve o'clock. ");
+raqam('6252937618779356131');
