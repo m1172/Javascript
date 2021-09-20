@@ -102,11 +102,11 @@
 
 function raqam(value) {
   a = value.split('');
-  a.forEach((value) => {
-    if (a < value) {
-      console.log(parseInt(value));
+  a.forEach((e) => {
+    if (value.split('') <= e) {
+      console.log(e);
     }
   });
   // console.log(a);
 }
-raqam('6252937618779356131');
+raqam('63056931');
