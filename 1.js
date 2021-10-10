@@ -113,10 +113,9 @@ function raqam(value) {
   for (let i = 0; i < a.length; i++) {
     if (a[i] === max) {
       result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
-      break;
     }
   }
   console.log(result);
   // console.log(a);
 }
-raqam('6305639149824');
+raqam('2903712123456789');
