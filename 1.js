@@ -102,11 +102,21 @@
 
 function raqam(value) {
   a = value.split('');
-  a.forEach((e) => {
-    if (value.split('') <= e) {
-      console.log(e);
+  var max = 0;
+  var result = 0;
+
+  a.forEach((value) => {
+    if (max < value) {
+      max = value;
     }
   });
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] === max) {
+      result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
+      break;
+    }
+  }
+  console.log(result);
   // console.log(a);
 }
-raqam('63056931');
+raqam('6305639149824');
