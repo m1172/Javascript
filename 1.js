@@ -111,11 +111,14 @@ function raqam(value) {
     }
   });
   for (let i = 0; i < a.length; i++) {
-    if (a[i] === max) {
-      result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
+    if (a.length > 3) {
+      if (a[i] === max) {
+        result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
+      }
     }
+    // else max;
   }
   console.log(result);
   // console.log(a);
 }
-raqam('2903712123456789');
+raqam('29037121923456789');
