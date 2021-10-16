@@ -117,7 +117,7 @@ function raqam(value) {
       }
     }
     // else max;
-  }
+  // }
   console.log(result);
   // console.log(a);
 }
