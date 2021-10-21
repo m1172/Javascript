@@ -104,21 +104,24 @@ function raqam(value) {
   a = value.split('');
   var max = 0;
   var result = 0;
+  console.log(a[3]);
 
-  a.forEach((value) => {
-    if (max < value) {
-      max = value;
+  // a.forEach((value) => {
+  //   if (max < value) {
+  //     max = value;
+  //   }
+  // });
+  let i = 0;
+  while (i < a.length) {
+    if (result < a[i]) {
+      result = a[i];
     }
-  });
-  for (let i = 0; i < a.length; i++) {
-    if (a.length > 3) {
-      if (a[i] === max) {
-        result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
-      }
-    }
-    // else max;
+    i++;
   }
   console.log(result);
   // console.log(a);
 }
-raqam('29037121923456789');
+raqam('203712123456789');
+
+var b = ['string', 5, 5.3, true];
+console.log(b);
