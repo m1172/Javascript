@@ -111,8 +111,10 @@ function raqam(value) {
     }
   });
   for (let i = 0; i < a.length; i++) {
-    if (i < a.length - 3) {            //i =12 a.lenght=14(12<14-3)      
-      if (a[i] === max) {              //a[i]=9  max=9 (agar( teng bolsa 9ga ) bajar)
+    if (i < a.length - 3) {
+      //i =12 a.lenght=14(12<14-3)
+      if (a[i] === max) {
+        //a[i]=9  max=9 (agar( teng bolsa 9ga ) bajar)
         result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
       }
     }
@@ -122,5 +124,3 @@ function raqam(value) {
   // console.log(a);
 }
 raqam('203712123456978');
-
-['string',5, ]
