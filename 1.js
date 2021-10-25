@@ -118,7 +118,6 @@ function raqam(value) {
         result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
       }
     }
-    // else max;
   }
   console.log(result);
   // console.log(a);
