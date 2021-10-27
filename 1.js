@@ -130,10 +130,11 @@ function ipv(value) {
   if (a.length <= 4) {
     for (let i = 0; i <= 3; i++)
       if (a[i] < 255) {
-        count++;
+        if (a[i].indexOf(0) != 0) {
+          count++;
+        }
       }
   }
   console.log(count == 4);
 }
-
-ipv('123.34.45.74');
+ipv('123.34.5.74');
