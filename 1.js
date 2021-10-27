@@ -123,3 +123,19 @@
 //   // console.log(a);
 // }
 // raqam('203712123456978');
+
+function ipv(value) {
+  var a = value.split('.');
+  if (a.length <= 4) {
+    for (let i = 0; i <= 3; i++)
+      if (a[i] > 0) {
+        if (a[i] < 55) {
+          console.log('togri');
+        }
+      }
+  }
+
+  console.log(a.length);
+}
+
+ipv('123.34.45.74');
