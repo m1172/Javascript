@@ -125,16 +125,22 @@
 // raqam('203712123456978');
 
 function ipv(value) {
+  var b = 0;
   var count = 0;
   var a = value.split('.');
-  if (a.length <= 4) {
-    for (let i = 0; i <= 3; i++)
-      if (a[i] < 255) {
-        if (a[i].indexOf(0) != 0) {
-          count++;
+  for (let i = 0; i <= 3; i++) {
+    if (a[i]) {
+      b++;
+      if (b == 4) {
+        if (a[i] < 255) {
+          if (a[i].indexOf(0) != 0) {
+            count++;
+          }
         }
       }
+    }
   }
-  console.log(count == 4);
+  console.log(b);
+  console.log(count);
 }
-ipv('123.34.5.74');
+ipv('123.123.123.1');
