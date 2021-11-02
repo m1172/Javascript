@@ -124,40 +124,40 @@
 // }
 // raqam('203712123456978');
 
-// function ipv(value) {
-//   var b = 0;
-//   var count = 0;
-//   var a = value.split('.');
-//   for (let i = 0; i <= 3; i++) {
-//     if (a[i]) {
-//       b++;
-//       if (b > 3) {
-//         if (a[i] < 255) {
-//           if (a[i].indexOf(0) != 0) {
-//             count++;
-//           }
-//         }
-//       }
-//     }
-//   }
-//   console.log(b);
-//   console.log(count);
-// }
-// ipv('123.123.123.');
-
 function ipv(value) {
   var b = 0;
   var count = 0;
   var a = value.split('.');
-  if (a.length == 4) {
-    for (let i = 0; i <= 3; i++) {
-      if (a[i] < 255) {
-        if (a[i].indexOf(0) != 0) {
-          count++;
+  for (let i = 0; i <= 3; i++) {
+    if (a[i]) {
+      b++;
+      if (b > 3) {
+        if (a[i] < 255) {
+          if (a[i].indexOf(0) != 0) {
+            count++;
+          }
         }
       }
     }
   }
-  console.log(count == 4);
+  console.log(b);
+  console.log(count);
 }
-ipv('123.123.123.0');
+ipv('123.123.123.');
+
+// function ipv(value) {
+//   var b = 0;
+//   var count = 0;
+//   var a = value.split('.');
+//   if (a.length == 4) {
+//     for (let i = 0; i <= 3; i++) {
+//       if (a[i] < 255) {
+//         if (a[i].indexOf(0) != 0) {
+//           count++;
+//         }
+//       }
+//     }
+//   }
+//   console.log(count == 4);
+// }
+// ipv('123.123.123.0');
