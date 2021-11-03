@@ -128,19 +128,19 @@ function ipv(value) {
   var b = 0;
   var count = 0;
   var a = value.split('.');
+
+  // if (a) {
   for (let i = 0; i <= 3; i++) {
-    if (a[i]) {
-      b++;
-      if (b > 3) {
-        if (a[i] < 255) {
-          if (a[i].indexOf(0) != 0) {
-            count++;
-          }
+    if (b > 3) {
+      if (a[i] < 255) {
+        if (a[i].indexOf(0) != 0) {
+          count++;
         }
       }
     }
   }
-  console.log(b);
+  // }
+  console.log(a);
   console.log(count);
 }
 ipv('123.123.123.');
