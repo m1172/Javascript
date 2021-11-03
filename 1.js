@@ -124,13 +124,6 @@
 // }
 // raqam('203712123456978');
 
-function ipv(value) {
-  var b = 0;
-  var count = 0;
-  var a = value.split('.');
-
-  
-
 // function ipv(value) {
 //   var b = 0;
 //   var count = 0;
