@@ -129,21 +129,7 @@ function ipv(value) {
   var count = 0;
   var a = value.split('.');
 
-  // if (a) {
-  for (let i = 0; i <= 3; i++) {
-    if (b > 3) {
-      if (a[i] < 255) {
-        if (a[i].indexOf(0) != 0) {
-          count++;
-        }
-      }
-    }
-  }
-  // }
-  console.log(a);
-  console.log(count);
-}
-ipv('123.123.123.');
+  
 
 // function ipv(value) {
 //   var b = 0;
