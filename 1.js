@@ -133,7 +133,6 @@ function ipv(value) {
       b++;
     }
   }
-
   if (b == 4) {
     for (let i = 0; i <= 3; i++) {
       if (a[i] < 255) {
