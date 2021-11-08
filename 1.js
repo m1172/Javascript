@@ -145,3 +145,7 @@
 //   console.log(count == 4);
 // }
 // ipv('123.123.123.');
+
+function find() {}
+
+console.log(find());
