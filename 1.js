@@ -146,6 +146,11 @@
 // }
 // ipv('123.123.123.');
 
-function find() {}
+function find(value) {
+  var a = value.split('');
+  for (let i; i < a.length; i--) {
+    console.log(a[i] - a[i]);
+  }
+}
 
-find(2, 5, 9, 11, 13);
+find('2,4,6,8');
