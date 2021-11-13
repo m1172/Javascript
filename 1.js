@@ -147,9 +147,9 @@
 // ipv('123.123.123.');
 
 function find(value) {
-  var a = value.split('');
-  for (let i; i < a.length; i--) {
-    console.log(a[i] - a[i]);
+  var a = value.split(',');
+  for (let i = a.length; i > 0; i--) {
+    console.log(a[i] - a[i - 1]);
   }
 }
 
