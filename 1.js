@@ -148,9 +148,12 @@
 
 function find(value) {
   var a = value.split(',');
-  for (let i = a.length; i > 0; i--) {
-    console.log(a[i] - a[i - 1]);
+  for (let i = a.length - 1; i > 0; i--) {
+    // console.log(a[i] - a[i - 1]);
+    // console.log(i);
+    var b = a[i] - a[i - 1];
+    console.log(b);
   }
 }
 
-find('2,4,6,8');
+find('2,4,6,10,12');
