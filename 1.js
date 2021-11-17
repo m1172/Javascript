@@ -152,7 +152,7 @@ function find(value) {
     // console.log(a[i] - a[i - 1]);
     // console.log(i);
     var b = a[i] - a[i - 1];
-    console.log(b);
+    console.log(b.toString().split(','));
   }
 }
 
