@@ -148,12 +148,25 @@
 
 function find(value) {
   var a = value.split(',');
-  for (let i = a.length - 1; i > 0; i--) {
-    // console.log(a[i] - a[i - 1]);
-    console.log(i);
-    var b = a[i] - a[i - 1];
-    console.log(b.toString().split(','));
+  var farq1 = 0,
+    farq2 = 0,
+    counter = 0,
+    index = 0;
+
+  farq1 = a[1] - a[0];
+  for (var i = 0; i < a.length - 1; i++) {
+    farq2 = a[i + 1] - a[i];
+    if (farq1 != farq2) {
+      index = i;
+      counter++;
+    }
+  }
+
+  if (counter > 1) {
+    console.log(parseint(a[0]) + parseInt(farq1) / 2);
+  } else if (counter == 1) {
+    console.log(parseInt(a[index]) + parseInt(farq1));
   }
 }
 
-find('2,4,6,10,12');
+find('1,3,7');
