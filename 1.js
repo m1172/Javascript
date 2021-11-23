@@ -158,3 +158,21 @@ function round(value) {
 }
 
 round('1.56426');
+
+function find(value) {
+  a = value.split(',');
+  farq1 = 0;
+  farq2 = 0;
+  index = 0;
+  counter = 0;
+
+  farq1 = a[1] - a[0];
+  for (let i = 0; i < a.length - 1; i++) {
+    farq2 = a[1] - a[i];
+    if (farq1 != farq2) {
+      index = i;
+      counter++;
+    }
+  }
+}
+find('1,3,7,9');
