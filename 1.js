@@ -174,5 +174,8 @@ function find(value) {
       counter++;
     }
   }
+  if (counter > 1) {
+    console.log(parseInt(a[0]) + parseInt(farq1) / 2);
+  }
 }
 find('1,3,7,9');
