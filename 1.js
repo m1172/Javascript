@@ -174,8 +174,6 @@ function find(value) {
       counter++;
     }
   }
-  // console.log(counter);
-  // console.log(index);
   if (counter > 1) {
     console.log(parseInt(a[0]) + parseInt(farq1 / 2));
   } else if (counter == 1) {
