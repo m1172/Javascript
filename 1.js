@@ -146,18 +146,18 @@
 // }
 // ipv('123.123.123.');
 
-function round(value) {
-  x = value.split('.');
-  a = value.split('.')[1];
-  b = a.split('')[0];
-  if (b >= 5) {
-    console.log(++x[0]);
-  } else if (b < 5) {
-    console.log(x[0]);
-  }
-}
+// function round(value) {
+//   x = value.split('.');
+//   a = value.split('.')[1];
+//   b = a.split('')[0];
+//   if (b >= 5) {
+//     console.log(++x[0]);
+//   } else if (b < 5) {
+//     console.log(x[0]);
+//   }
+// }
 
-round('1.56426');
+// round('1.56426');
 
 function find(value) {
   a = value.split(',');
@@ -168,14 +168,18 @@ function find(value) {
 
   farq1 = a[1] - a[0];
   for (let i = 0; i < a.length - 1; i++) {
-    farq2 = a[1] - a[i];
+    farq2 = a[i + 1] - a[i];
     if (farq1 != farq2) {
       index = i;
       counter++;
     }
   }
+  // console.log(counter);
+  // console.log(index);
   if (counter > 1) {
-    console.log(parseInt(a[0]) + parseInt(farq1) / 2);
+    console.log(parseInt(a[0]) + parseInt(farq1 / 2));
+  } else if (counter == 1) {
+    console.log(parseInt(a[index]) + parseInt(farq1));
   }
 }
-find('1,3,7,9');
+find('3,5,7,11');
