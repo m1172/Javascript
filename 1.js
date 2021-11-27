@@ -180,4 +180,4 @@ function find(value) {
     console.log(parseInt(a[index]) + parseInt(farq1));
   }
 }
-find('3,5,7,11');
+find('3,5,7,11,13');
