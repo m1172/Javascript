@@ -169,7 +169,7 @@ function find(value) {
   farq1 = a[1] - a[0];
   for (let i = 0; i < a.length - 1; i++) {
     farq2 = a[i + 1] - a[i];
-    if (farq1 != farq2) {
+    if (farq2 != farq1) {
       index = i;
       counter++;
     }
@@ -177,10 +177,10 @@ function find(value) {
   console.log(counter);
   // console.log(a[index]);
   if (counter > 1) {
-    console.log(parseInt(a[0]) + parseInt(farq1 / 2));
-  } else if (counter == 1) {
     console.log(parseInt(a[index]) + parseInt(farq1));
+  } else if (counter == 1) {
+    console.log(parseInt(a[0]) + parseInt(farq1 / 2));
   }
 }
-// find('3,7,9,11,13');
-find('1,5,7,9');
+find('3,5,7,11,13');
+// find('1,5,7');
