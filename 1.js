@@ -182,5 +182,5 @@ function find(value) {
     console.log(parseInt(a[0]) + parseInt(farq1 / 2));
   }
 }
-// find('3,7,9,11,13');
+find('3,7,9,11,13');
 // find('1,5,7');
