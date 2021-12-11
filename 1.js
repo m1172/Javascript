@@ -199,6 +199,6 @@ function find(value) {
 
     console.log(n.toString().split(' '));
   }
-  // console.log(i);
+  console.log(i);
 }
 find();
