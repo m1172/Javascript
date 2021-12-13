@@ -185,10 +185,19 @@
 // find('3,7,9,11,13');
 // find('1,5,7');
 
-function order(value) {
-  var a = 5;
-
-  console.log(value.join(''));
+function order(value1) {
+  var value = value1.join('');
+  console.log(value);
+  var index = 0;
+  var counter = 0;
+  for (let i = 0; i < value.length; i++) {
+    if (value.includes(value[i]) !== true) {
+      index = i;
+      counter++;
+      if (counter % 2 != 0) {
+        console.log(value.includes(value[i]));
+      }
+    }
+  }
 }
-
 order([1, 2, 3, 1, 2, 3, 4, 3]);
