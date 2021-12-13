@@ -195,7 +195,7 @@ function order(value1) {
       index = i;
       counter++;
       if (counter % 2 != 0) {
-        console.log(value.includes(value[i]));
+        console.log());
       }
     }
   }
