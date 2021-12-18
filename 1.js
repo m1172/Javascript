@@ -159,66 +159,51 @@
 
 // round('1.56426');
 
-// function find(value) {
-//   a = value.split(',');
-//   farq1 = 0;
-//   farq2 = 0;
-//   index = 0;
-//   counter = 0;
+function find(value) {
+  a = value.split(',');
+  farq1 = 0;
+  farq2 = 0;
+  index = 0;
+  counter = 0;
 
-//   farq1 = a[1] - a[0];
-//   for (let i = 0; i < a.length - 1; i++) {
-//     farq2 = a[i + 1] - a[i];
-//     if (farq1 != farq2) {
-//       index = i;
-//       counter++;
-//     }
-//   }
-//   // console.log(counter);
-//   console.log(a[index]);
-//   if (counter > 1) {
-//     console.log(parseInt(a[index]) + parseInt(farq1));
-//   } else if (counter == 1) {
-//     console.log(parseInt(a[0]) + parseInt(farq1 / 2));
-//   }
-// }
-// find('3,7,9,11,13');
-// find('1,5,7');
-
-// function order(value1) {
-//   var value = value1.join('');
-//   console.log(value);
-//   var index = 0;
-//   var counter = 0;
-//   for (let i = 0; i < value.length; i++) {
-//     console.log(value[i] == value);
-//     if ((value[i] == value) != false) {
-//       index = i;
-//       counter++;
-//       console.log(index);
-//       if (counter % 2 != 0) {
-//         console.log();
-//       }
-//     }
-//   }
-// }
-// order([1, 2, 3, 1, 2, 3, 4, 3]);
-
-function order(value) {
-  var a = 0;
-  var chosenvalue = 0;
-  for (let i = 0; i < value.length; i++) {
-    for (let x = 0; x < value.length; x++) {
-      if (value[i] == value[x]) {
-        chosenvalue = value[i];
-        a++;
-      }
-    }
-    if (a % 2 == 1) {
-      console.log(chosenvalue);
-      break;
+  farq1 = a[1] - a[0];
+  for (let i = 0; i < a.length - 1; i++) {
+    farq2 = a[i + 1] - a[i];
+    if (farq1 != farq2) {
+      index = i;
+      counter++;
     }
   }
+  // console.log(counter);
+  // console.log(a[index]);
+  if (counter > 1) {
+    console.log(parseInt(a[0]) + parseInt(farq1 / 2));
+  } else if (counter == 1) {
+    if (a.length == 3) {
+      if (a[1] - a[0] > a[2] - a[1]) {
+        console.log(parseInt(farq1 / 2) + parseInt(a[0]));
+      } else console.log(parseInt(a[1]) + parseInt(farq1));
+    } else console.log(parseInt(a[index]) + parseInt(farq1));
+  }
 }
+// find('3,7,9,11,13');
+find('1,5,7');
 
-order([1, 2, 2, 3, 3, 3, 4, 4, 5, 3, 3, 3, 2, 2, 1]);
+// function order(value) {
+//   var a = 0;
+//   var chosenvalue = 0;
+//   for (let i = 0; i < value.length; i++) {
+//     for (let x = 0; x < value.length; x++) {
+//       if (value[i] == value[x]) {
+//         chosenvalue = value[i];
+//         a++;
+//       }
+//     }
+//     if (a % 2 == 1) {
+//       console.log(chosenvalue);
+//       break;
+//     }
+//   }
+// }
+
+// order([1, 2, 2, 3, 3, 3, 4, 4, 5, 3, 3, 3, 2, 2, 1]);
