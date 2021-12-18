@@ -206,12 +206,19 @@
 
 function order(value) {
   var a = 0;
-  value.forEach((raqam) => {
-    if (value.includes(raqam) !== false) {
-      a++;
+  var chosenvalue = 0;
+  for (let i = 0; i < value.length; i++) {
+    for (let x = 0; x < value.length; x++) {
+      if (value[i] == value[x]) {
+        chosenvalue = value[i];
+        a++;
+      }
     }
-  });
-  console.log(a);
+    if (a % 2 == 1) {
+      console.log(chosenvalue);
+      break;
+    }
+  }
 }
 
-order([1, 2, 3, 1, 2, 3, 4, 3]);
+order([1, 2, 2, 3, 3, 3, 4, 4, 5, 3, 3, 3, 2, 2, 1]);
