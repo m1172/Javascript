@@ -8,41 +8,50 @@ function prime(tub) {
 }
 console.log(prime(29));
 
-// function sum(all) {
-//   var a=0;
-//   for(var i=1; i<all; i++){
-//    if (i%3 ===0 || i%5===0) {
-//      a+=i
-//      }
-//    }
-//   console.log(a);
-// }
-// sum(10);
-// console.log(sum(18));
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-// function last(str,last) {
-//   console.log(str.endsWith(last));
-// }
-// last('aqlli','li');
+// Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them).
 
-// function last(str,last){
-// console.log(str.lastIndexOf(last)>0);
-// }
-// last('kitob','')
+// Note: If the number is a multiple of both 3 and 5, only count it once.
 
-// function last(str, last) {
-//   for (let i = 0; i < str.length; i--) return str.indexOf(last, i) >= 0;
-// }
-// console.log(last('kitob', 'to'));
+function sum(all) {
+  var a = 0;
+  for (var i = 1; i < all; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      a += i;
+    }
+  }
+  console.log(a);
+}
+sum(10);
 
-// function array(soz) {
-//   var unli = ['a', 'e', 'i', 'o', 'u'];
-//   for (let i = 0; i < unli.length; i++) {
-//     var un = unli[i];
-//     console.log(soz.includes(unli[i]));
-//   }
-// }
-// array('muhammadali');
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+// strEndsWith('abc', 'bc') -- returns true
+// strEndsWith('abc', 'd') -- returns false
+
+function last(str, last) {
+  console.log(str.endsWith(last));
+}
+last('aqlli', 'li');
+
+function last(str, last) {
+  console.log(str.lastIndexOf(last) > 0);
+}
+last('kitob', 'ob');
+
+function last(str, last) {
+  for (let i = 0; i < str.length; i--) return str.indexOf(last, i) >= 0;
+}
+console.log(last('kitob', 'to'));
+
+function array(soz) {
+  var unli = ['a', 'e', 'i', 'o', 'u'];
+  for (let i = 0; i < unli.length; i++) {
+    var un = unli[i];
+    console.log(soz.includes(unli[i]));
+  }
+}
+array('muhammadali');
 
 // function vowel(str) {
 //   var unli = ['a', 'e', 'i', 'o', 'u'];
