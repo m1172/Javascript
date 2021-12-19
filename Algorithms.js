@@ -44,6 +44,10 @@ function last(str, last) {
 }
 console.log(last('kitob', 'to'));
 
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+
 function array(soz) {
   var unli = ['a', 'e', 'i', 'o', 'u'];
   for (let i = 0; i < unli.length; i++) {
@@ -53,36 +57,43 @@ function array(soz) {
 }
 array('muhammadali');
 
-// function vowel(str) {
-//   var unli = ['a', 'e', 'i', 'o', 'u'];
-//   arr = str.split('');
-//   let count = 0;
-//   arr.forEach((harf) => {
-//     if (unli.includes(harf) !== false) {
-//       count++;
-//     }
-//   });
-//   console.log(count);
-// }
-// vowel('muhammadali');
+function vowel(str) {
+  var unli = ['a', 'e', 'i', 'o', 'u'];
+  arr = str.split('');
+  let count = 0;
+  arr.forEach((harf) => {
+    if (unli.includes(harf) !== false) {
+      count++;
+    }
+  });
+  console.log(count);
+}
+vowel('muhammadali');
 
-// function harf(str, b) {
-//   var a = b.split('');
-//   arr = str.split('');
-//   let count = 0;
-//   arr.forEach((harf) => {
-//     if (a.includes(harf) !== false) {
-//       count++;
-//     }
-//   });
-//   return str.length === count;
-// }
-// console.log(harf('abc', 'bca'));
+// function(abc,bca) =true
+function harf(str, b) {
+  var a = b.split('');
+  arr = str.split('');
+  let count = 0;
+  arr.forEach((harf) => {
+    if (a.includes(harf) !== false) {
+      count++;
+    }
+  });
+  return str.length === count;
+}
+console.log(harf('abc', 'bca'));
 
-// const ochirish = (ar, raqam) => {
-//   const yangi = ar.filter((value) => value != raqam);
-//   console.log(yangi);
-// };
+// Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+// It should remove all values from list a, which are present in list b keeping their order.
+// arrayDiff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+// arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+const ochirish = (ar, raqam) => {
+  const yangi = ar.filter((value) => value != raqam);
+  console.log(yangi);
+};
 
 // ochirish([1, 2, 2, 2, 3], [2]);
 // let number;
