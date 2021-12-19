@@ -1,10 +1,12 @@
-// function prime(tub) {
-//     for(let i = 2; i < tub; i++)
-//       if(tub % i === 0) return false;
-//     return tub > 1;
-//   }
+// Define a function that takes one integer argument and returns logical value true or false depending on if the integer is a prime.
 
-//   console.log(prime(29));
+// Per Wikipedia, a prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+function prime(tub) {
+  for (let i = 2; i < tub; i++) if (tub % i === 0) return false;
+  return tub > 1;
+}
+console.log(prime(29));
 
 // function sum(all) {
 //   var a=0;
