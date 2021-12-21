@@ -1,5 +1,4 @@
 // Define a function that takes one integer argument and returns logical value true or false depending on if the integer is a prime.
-
 // Per Wikipedia, a prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
 
 function prime(tub) {
@@ -9,9 +8,7 @@ function prime(tub) {
 console.log(prime(29));
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-
 // Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. Additionally, if the number is negative, return 0 (for languages that do have them).
-
 // Note: If the number is a multiple of both 3 and 5, only count it once.
 
 function sum(all) {
@@ -138,29 +135,37 @@ function alifbo(values) {
 }
 alifbo("The sunset sets at twelve o'clock. ");
 
-// function raqam(value) {
-//   a = value.split('');
-//   var max = 0;
-//   var result = 0;
+// In the following 6 digit number:
+// 283910
+// 91 is the greatest sequence of 2 consecutive digits.
+// In the following 10 digit number:
+// 1234567890
+// 67890 is the greatest sequence of 5 consecutive digits.
+// Complete the solution so that it returns the greatest sequence of five consecutive digits found within the number given. The number will be passed in as a string of only digits. It should return a five digit integer. The number passed may be as large as 1000 digits.
 
-//   a.forEach((value) => {
-//     if (max < value) {
-//       max = value;
-//     }
-//   });
-//   for (let i = 0; i < a.length; i++) {
-//     if (i < a.length - 3) {
-//       //i =12 a.lenght=14(12<14-3)
-//       if (a[i] === max) {
-//         //a[i]=9  max=9 (agar( teng bolsa 9ga ) bajar)
-//         result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
-//       }
-//     }
-//   }
-//   console.log(result);
-//   // console.log(a);
-// }
-// raqam('203712123456978');
+function raqam(value) {
+  a = value.split('');
+  var max = 0;
+  var result = 0;
+
+  a.forEach((value) => {
+    if (max < value) {
+      max = value;
+    }
+  });
+  for (let i = 0; i < a.length; i++) {
+    if (i < a.length - 3) {
+      //i =12 a.lenght=14(12<14-3)
+      if (a[i] === max) {
+        //a[i]=9  max=9 (agar( teng bolsa 9ga ) bajar)
+        result = max * 1000 + a[i + 1] * 100 + a[i + 2] * 10 + a[i + 3] * 1;
+      }
+    }
+  }
+  console.log(result);
+  // console.log(a);
+}
+raqam('203712123456978');
 
 // function ipv(value) {
 //   var b = 0;
