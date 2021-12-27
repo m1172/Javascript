@@ -202,18 +202,18 @@ function ipv(value) {
 }
 ipv('123.123.123.');
 
-// function round(value) {
-//   x = value.split('.');
-//   a = value.split('.')[1];
-//   b = a.split('')[0];
-//   if (b >= 5) {
-//     console.log(++x[0]);
-//   } else if (b < 5) {
-//     console.log(x[0]);
-//   }
-// }
+function round(value) {
+  x = value.split('.');
+  a = value.split('.')[1];
+  b = a.split('')[0];
+  if (b >= 5) {
+    console.log(++x[0]);
+  } else if (b < 5) {
+    console.log(x[0]);
+  }
+}
 
-// round('1.56426');
+round('1.56426');
 
 function find(value) {
   a = value.split(',');
