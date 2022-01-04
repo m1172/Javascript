@@ -236,8 +236,7 @@ function find(value) {
       counter++;
     }
   }
-  // console.log(counter);
-  // console.log(a[index]);
+
   if (counter > 1) {
     console.log(parseInt(a[0]) + parseInt(farq1 / 2));
   } else if (counter == 1) {
@@ -251,21 +250,30 @@ function find(value) {
 // find('3,7,9,11,13');
 find('1,5,7');
 
-// function order(value) {
-//   var a = 0;
-//   var chosenvalue = 0;
-//   for (let i = 0; i < value.length; i++) {
-//     for (let x = 0; x < value.length; x++) {
-//       if (value[i] == value[x]) {
-//         chosenvalue = value[i];
-//         a++;
-//       }
-//     }
-//     if (a % 2 == 1) {
-//       console.log(chosenvalue);
-//       break;
-//     }
-//   }
-// }
+// Given an array of integers, find the one that appears an odd number of times.
+// There will always be only one integer that appears an odd number of times.
+// Examples
+// [7] should return 7, because it occurs 1 time (which is odd).
+// [0] should return 0, because it occurs 1 time (which is odd).
+// [1,1,2] should return 2, because it occurs 1 time (which is odd).
+// [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+// [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
-// order([1, 2, 2, 3, 3, 3, 4, 4, 5, 3, 3, 3, 2, 2, 1]);
+function order(value) {
+  var a = 0;
+  var chosenvalue = 0;
+  for (let i = 0; i < value.length; i++) {
+    for (let x = 0; x < value.length; x++) {
+      if (value[i] == value[x]) {
+        chosenvalue = value[i];
+        a++;
+      }
+    }
+    if (a % 2 == 1) {
+      console.log(chosenvalue);
+      break;
+    }
+  }
+}
+
+order([1, 2, 2, 3, 3, 3, 4, 4, 5, 3, 3, 3, 2, 2, 1]);
