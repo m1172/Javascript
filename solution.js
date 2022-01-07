@@ -12,7 +12,7 @@ function brackets(value) {
       }
       if (a[i].includes(')')) {
         counter--;
-        if (counter < 0 != false) {
+        if (counter < 0) {
           test++;
         }
       }
@@ -20,4 +20,4 @@ function brackets(value) {
     console.log(test == 0);
   }
 }
-brackets(')(())()');
+brackets('(()))()');
