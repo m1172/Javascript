@@ -1,12 +1,30 @@
-function fibonacci(value) {
-  x = [0, 1];
-
-  for (let i = 0; i < 20; i++) {
-    x.push(x[i] + x[i + 1]);
+function sum(value) {
+  array = value.split('');
+  a = 0;
+  b = 0;
+  c = 0;
+  d = 0;
+  x = 0;
+  for (let i = 0; i < array.length; i++) {
+    a += parseInt(array[i]);
   }
-  number = x[value];
-  string = number.toString().split('');
-  console.log(string[string.length - 1]);
-}
+  if (a < 10) {
+    console.log(a);
+  } else {
+    b = a.toString().split('');
+    for (let i = 0; i < b.length; i++) {
+      c += parseInt(b[i]);
+    }
 
-fibonacci(14);
+    if (c < 10) {
+      console.log(c);
+    } else {
+      d = c.toString().split('');
+      for (let i = 0; i < d.length; i++) {
+        x += parseInt(d[i]);
+      }
+      console.log(x);
+    }
+  }
+}
+sum('493193');
