@@ -5,26 +5,18 @@ function sum(value) {
   c = 0;
   d = 0;
   x = 0;
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length - 1; i++) {
     a += parseInt(array[i]);
-  }
-  if (a < 10) {
-    console.log(a);
-  } else {
-    b = a.toString().split('');
-    for (let i = 0; i < b.length; i++) {
-      c += parseInt(b[i]);
-    }
-
-    if (c < 10) {
-      console.log(c);
-    } else {
-      d = c.toString().split('');
-      for (let i = 0; i < d.length; i++) {
-        x += parseInt(d[i]);
+    if (a < 10) {
+      c = a;
+      break;
+    } else if (a > 10) {
+      b = a.toString().split('');
+      for (let v = 0; v <= b.length - 1; v++) {
+        c += parseInt(b[v]);
       }
-      console.log(x);
     }
   }
+  console.log(c);
 }
 sum('493193');
