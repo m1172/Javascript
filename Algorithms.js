@@ -330,33 +330,19 @@ fibonacci(14);
 // 132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
 // 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
-function sum(value) {
-  array = value.split('');
+function number(value1) {
   a = 0;
-  b = 0;
-  c = 0;
-  d = 0;
-  x = 0;
-  for (let i = 0; i < array.length; i++) {
-    a += parseInt(array[i]);
-  }
-  if (a < 10) {
-    console.log(a);
-  } else {
-    b = a.toString().split('');
-    for (let i = 0; i < b.length; i++) {
-      c += parseInt(b[i]);
-    }
+  var value = value1.split('');
 
-    if (c < 10) {
-      console.log(c);
-    } else {
-      d = c.toString().split('');
-      for (let i = 0; i < d.length; i++) {
-        x += parseInt(d[i]);
-      }
-      console.log(x);
+  while (value.length > 1) {
+    a = 0;
+    value = value1.split('');
+    for (let i = 0; i < value.length; i++) {
+      a += parseInt(value[i]);
     }
+    value1 = a.toString();
   }
+  console.log(a);
 }
-sum('493193');
+
+number('132189');
