@@ -1,16 +1,8 @@
-function number(value1) {
-  a = 0;
-  var value = value1.split('');
-
-  for (; value.length > 1; ) {
-    a = 0;
-    value = value1.split('');
-    for (let i = 0; i < value.length; i++) {
-      a += parseInt(value[i]);
+function name(nums) {
+  let max_num = Number.NEGATIVE_INFINITY;
+  for (let num of nums) {
+    if (num > max_num) {
     }
-    value1 = a.toString();
   }
-  console.log(a);
+  return max_num;
 }
-
-number('493193');
