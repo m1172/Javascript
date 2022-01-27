@@ -1,16 +1,10 @@
-function number(value1) {
-  a = 0;
-  var value = value1.split('');
-
-  while (value.length > 1) {
-    a = 0;
-    value = value1.split('');
-    for (let i = 0; i < value.length; i++) {
-      a += parseInt(value[i]);
+function biggest(value) {
+  var num = value.split('');
+  for (let i = 0; i < num.length; i++) {
+    if (num[i] <= num[i + 1]) {
+      console.log(num[i]);
     }
-    value1 = a.toString();
   }
-  console.log(a);
 }
 
-number('132189');
+biggest('42145');
