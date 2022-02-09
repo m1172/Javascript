@@ -375,3 +375,10 @@ function biggest(value) {
   console.log(array);
 }
 biggest('942861749521');
+
+//Second solution
+function order(value) {
+  var array = value.split('');
+  console.log(array.sort((a, b) => b - a));
+}
+order('82762431579');
