@@ -442,7 +442,7 @@ function comp(a, b) {
       second++;
     }
   }
-  console.log(second);
+  console.log(second == b.length);
 }
 
 comp(
