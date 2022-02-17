@@ -1,12 +1,13 @@
 function comp(a, b) {
-  var number = 0;
-  var square = 0;
+  var first = 0;
+  var second = 0;
   for (let i = 0; i < a.length; i++) {
-    number += a[i] * a[i];
-    square += b[i];
+    first = Math.pow(a[i], 2);
+    if (b.includes(first) != false) {
+      second++;
+    }
   }
-
-  console.log(number == square);
+  console.log(second);
 }
 
 comp(
