@@ -461,3 +461,15 @@ comp(
 // 67890 is the greatest sequence of 5 consecutive digits.
 
 // Complete the solution so that it returns the greatest sequence of five consecutive digits found within the number given. The number will be passed in as a string of only digits. It should return a five digit integer. The number passed may be as large as 1000 digits.
+function number(value) {
+  array = value.split('');
+  var max = 0;
+  for (let i = 0; i < array.length - 4; i++) {
+    if (max < value.slice(i, i + 5)) {
+      max = value.slice(i, i + 5);
+    }
+  }
+  console.log(max);
+}
+
+number('2999993945739899826');

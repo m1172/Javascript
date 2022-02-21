@@ -1,16 +1,12 @@
-function comp(a, b) {
-  var first = 0;
-  var second = 0;
-  for (let i = 0; i < a.length; i++) {
-    first = Math.pow(a[i], 2);
-    if (b.includes(first) != false) {
-      second++;
+function number(value) {
+  array = value.split('');
+  var max = 0;
+  for (let i = 0; i < array.length - 4; i++) {
+    if (max < value.slice(i, i + 5)) {
+      max = value.slice(i, i + 5);
     }
   }
-  console.log(second == b.length);
+  console.log(max);
 }
 
-comp(
-  [121, 144, 19, 161, 19, 144, 19, 11],
-  [121, 14641, 20736, 361, 25921, 361, 20736, 361]
-);
+number('2999993945739899826');
