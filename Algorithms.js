@@ -484,7 +484,7 @@ number('2999993945739899826');
 function string(value) {
   array = value.split('');
   probel = value.split(' ');
-  first = value.toUpperCase();
+  first = array.toUpperCase();
   let x = 0;
   let count = 0;
   if (probel.length < 3) {
@@ -508,4 +508,4 @@ function string(value) {
     console.log(false);
   }
 }
-string('Hel a');
+string('heEl a');
