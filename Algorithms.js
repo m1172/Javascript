@@ -482,30 +482,25 @@ number('2999993945739899826');
 // "aba" --> false
 // "moOse" --> false (ignore letter case)
 function string(value) {
-  array = value.split('');
+  array = value.toUpperCase().split('');
   probel = value.split(' ');
-  first = array.toUpperCase();
-  let x = 0;
   let count = 0;
   if (probel.length < 3) {
     for (let i = 0; i < array.length; i++) {
       for (let j = i; j < array.length; j++) {
-        if (array[i] == first[j]) {
-          x++;
-        }
         if (array[i] == array[j]) {
           count++;
         }
       }
     }
     if (probel.length == 2) {
-      console.log(count - array.length + 2 == x);
+      console.log(count == array.length);
       console.log('1');
     } else {
-      console.log(count - array.length + 1 == x);
+      console.log(count == array.length + 1);
     }
   } else {
     console.log(false);
   }
 }
-string('heEl a');
+string('jelCc kba');
