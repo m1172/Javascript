@@ -16,3 +16,6 @@
 
 a = 'hello  ';
 console.log(a.length);
+
+var arr = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'.toUpperCase();
+console.log(arr);
