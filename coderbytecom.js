@@ -27,8 +27,8 @@ function Solution(N, K) {
   }
   return N;
 }
-N = 191;
-K = 20;
+N = 100;
+K = 30;
 console.log(Solution(N, K));
 
 // var cleanRoom = function (robot) {
