@@ -48,18 +48,32 @@
 // n = 251;
 // k = 12;
 // console.log(maxNumber(n, k));
-var index = 0;
-var count = 0;
-function twoSum(nums, target) {
-  for (let i = 0; i < nums.length - 1; i++) {
-    for (let x = i; x < nums.length - 1; x++) {
-      if (nums[i] + nums[x + 1] == target) {
-        index = i;
-        count = x;
-      }
-      // console.log(nums[i] + nums[x + 1]);
+
+// var index = 0;
+// var count = 0;
+// function twoSum(nums, target) {
+//   for (let i = 0; i < nums.length - 1; i++) {
+//     for (let x = i; x < nums.length - 1; x++) {
+//       if (nums[i] + nums[x + 1] == target) {
+//         index = i;
+//         count = x;
+//       }
+//       // console.log(nums[i] + nums[x + 1]);
+//     }
+//   }
+//   console.log(index, count + 1);
+// }
+// twoSum([1, 2, 3, 7], 10);
+
+function func(n, k) {
+  var count = 0;
+  var num = 0;
+  for (let i = 0; i < n.length; i++) {
+    num = k[i];
+    for (let x = 0; x < k.length; x++) {
+      count = n[x];
+      console.log(n[count]);
     }
   }
-  console.log(index, count + 1);
 }
-twoSum([1, 2, 3, 7], 10);
+func([0, 1, 2, 3, 4], [0, 1, 2, 2, 1]);
