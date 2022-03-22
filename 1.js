@@ -67,13 +67,16 @@
 
 function func(n, k) {
   var count = 0;
-  var num = 0;
+  var a = 0;
+  var num = '';
   for (let i = 0; i < n.length; i++) {
-    num = k[i];
-    for (let x = 0; x < k.length; x++) {
+    a = k[i];
+    for (let x = i; x < k.length; x++) {
       count = n[x];
-      console.log(n[count]);
+
+      num = n[a];
     }
   }
+  console.log(num);
 }
 func([0, 1, 2, 3, 4], [0, 1, 2, 2, 1]);

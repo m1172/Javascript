@@ -6,30 +6,30 @@
 
 // console.log(FirstFactorial(8));
 
-var K, N;
-function Solution(N, K) {
-  var newStr,
-    count,
-    x = 0;
+// var K, N;
+// function Solution(N, K) {
+//   var newStr,
+//     count,
+//     x = 0;
 
-  for (let i = 0; (i = K) && x < 3; i++) {
-    var str = N.toString();
-    count = Number.parseInt(str[x]);
-    if (count === 9) {
-      x += 1;
-    } else {
-      newStr = str.slice(0, x) + (count + 1).toString() + str.slice(x + 1);
-      if (Number.parseInt(newStr) > N) {
-        N = Number.parseInt(newStr);
-        K -= 1;
-      }
-    }
-  }
-  return N;
-}
-N = 100;
-K = 30;
-console.log(Solution(N, K));
+//   for (let i = 0; (i = K) && x < 3; i++) {
+//     var str = N.toString();
+//     count = Number.parseInt(str[x]);
+//     if (count === 9) {
+//       x += 1;
+//     } else {
+//       newStr = str.slice(0, x) + (count + 1).toString() + str.slice(x + 1);
+//       if (Number.parseInt(newStr) > N) {
+//         N = Number.parseInt(newStr);
+//         K -= 1;
+//       }
+//     }
+//   }
+//   return N;
+// }
+// N = 100;
+// K = 30;
+// console.log(Solution(N, K));
 
 // var cleanRoom = function (robot) {
 //   let dir = 0;
